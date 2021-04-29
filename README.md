@@ -50,7 +50,7 @@ Recode incorrect and null values as NaN. </li>
 <p> Multiple strategies were considered for encoding categorical variables to use with skikit-learn’s Decision Tree module. Because Skikit-learn interprets numerical features as continuous numeric variables, we identified methods to avoid inducing order that does not exist in the data, and determined to use the ‘get_dummies’ function in pandas to convert categorical variables into dummy variables to accomplish this task efficiently. </p>
 
 
-
+&nbsp;
 
 For a full variable labeling explanation, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/main/.github/workflows/NLSY79%20codes.pdf). 
 
