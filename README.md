@@ -5,9 +5,11 @@
 Regression analysis is an important statistical method for the analysis of medical data. It enables the identification and characterization of relationships among multiple factors. It also enables the identification of prognostically relevant risk factors and the calculation of risk scores for individual prognostication.
 
 ##### Summary
-A regression analysis of the various types of health insurance offerings and its externalities on the U.S. healthcare system. All regressions are routed to control for heteroskedasticity and empirical models in this study are adjusted for R2 with equally distributed residuals.
+A regression analysis of the various types of health insurance offerings and its externalities on the U.S. healthcare system. All regressions are routed to control for heteroskedasticity and empirical models in this study are adjusted for R2 with equally distributed residuals. 
 
 ##### Motivation 
+Computational social scientists increasingly need to grapple with data that is either too big for a local machine and/or code that is too resource intensive to process on a local machine. In this project, we effectively scale computational methods = local machines. The focus will be social scientific applications, ranging from training machine learning models on large economic time series to processing and analyzing public data in real-time. Several large-scale computing frameworks are used such as MPI, MapReduce, Spark, and OpenCL, with a special emphasis on employing these frameworks using cloud resources and the Python programming language.
+
 Looking at the effects Medicaid has had on United States health is especially important when it provides medical care to four out of ten American children, pays for the care of two thirds of the people in nursing homes, and provides for ten million children and adults with physical and mental disabilities, according to the New York Times. It accounts also for sixty percent of U.S. federal funding. While many assume that Medicaid is expensive in every state, Illinois spending per person was well below the U.S. average for all major eligibility groups and spending per enrollee of $4,682 according to Voices for Illinois Children. If block grants were passed to all the states, Illinois and many other states would have to reduce Medicaid spending, number of programs being covered, and enrollment. With low spending on Medicaid being so prevalent already, it is important to study the impact on low-income, disabled, and children in Illinois. Medicaid is a topic that is of recent interest to this new presidential administration. With the current president threatening to repeal President Obama’s Affordable Care Act (ACA), looking at the results that Medicaid has had on the United States health is important. As one party is discrediting its return on (taxpayer dollars) investment, it is critical to review how government funded health insurance have impacted the well-being of Americans.
 
 ##### Data - Variables
@@ -18,7 +20,7 @@ NLSY79 data is used in this study because it is a cross-sectional representation
 
 For a full data variable explanation, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/main/.github/workflows/NLSY79%20codes.pdf). 
 
-For a summary of the bysort data for 1990 and 2021, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/jessicachitkuer-patch-1/Summ%20and%20by%20sort%20for%201990%20and%202010.pdf)
+For a summary of the bysort data for 1990 and 2021, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/jessicachitkuer-patch-1/Summ%20and%20by%20sort%20for%201990%20and%202010.pdf).
 
 
 Read more about the study in this project's wiki. 
