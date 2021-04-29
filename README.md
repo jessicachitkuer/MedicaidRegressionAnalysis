@@ -4,21 +4,21 @@
 
 Regression analysis is an important statistical method for the analysis of medical data. It enables the identification and characterization of relationships among multiple factors. It also enables the identification of prognostically relevant risk factors and the calculation of risk scores for individual prognostication.
 
-##### Summary
+#### Summary
 A regression analysis of the various types of health insurance offerings and its externalities on the U.S. healthcare system. All regressions are routed to control for heteroskedasticity and empirical models in this study are adjusted for R2 with equally distributed residuals. 
 
-##### Motivation 
+#### Motivation 
 Computational social scientists increasingly need to grapple with data that is either too big for a local machine and/or code that is too resource intensive to process on a local machine. In this project, we effectively scale computational methods = local machines. The focus will be social scientific applications, ranging from training machine learning models on large economic time series to processing and analyzing public data in real-time. Several large-scale computing frameworks are used such as MPI, MapReduce, Spark, and OpenCL, with a special emphasis on employing these frameworks using cloud resources and the Python programming language.
 
 Looking at the effects Medicaid has had on United States health is especially important when it provides medical care to four out of ten American children, pays for the care of two thirds of the people in nursing homes, and provides for ten million children and adults with physical and mental disabilities, according to the New York Times. It accounts also for sixty percent of U.S. federal funding. While many assume that Medicaid is expensive in every state, Illinois spending per person was well below the U.S. average for all major eligibility groups and spending per enrollee of $4,682 according to Voices for Illinois Children. If block grants were passed to all the states, Illinois and many other states would have to reduce Medicaid spending, number of programs being covered, and enrollment. With low spending on Medicaid being so prevalent already, it is important to study the impact on low-income, disabled, and children in Illinois. Medicaid is a topic that is of recent interest to this new presidential administration. With the current president threatening to repeal President Obama’s Affordable Care Act (ACA), looking at the results that Medicaid has had on the United States health is important. As one party is discrediting its return on (taxpayer dollars) investment, it is critical to review how government funded health insurance have impacted the well-being of Americans.
 
-##### Data - Variables
+#### Data - Variables
 While looking at Medicaid’s overall effect on U.S. health, the dependent variable is BMI, an important facet in determining a person’s overall health. BMI is calculated by taking the weight variable in pounds and dividing it by the height variable in inches, squared, then multiplying that number by 703. A BMI score above 30 would be considered obese. Independent variables include Medicaid, health insurance, income, time since last physicians visit, number of dependents, depression, gender, occupation, and education. 
 
-##### Variable Explanation
+#### Variable Explanation
 NLSY79 data is used in this study because it is a cross-sectional representation of individuals. This research study looks at adults aged 25 - 33 for the year 1990 and 45 - 53 for the year 2010, providing the most helpful and efficient way to see the outcome of Medicaid on BMI over time. All variables have a chosen baseline, because if all possibilities are included for a variable, then there would be a problem of perfect multicollinearity. Specific variables, like education and income, were chosen in an attempt to prevent omitted variable bias.
 
-##### Data Cleaning
+#### Data Cleaning
 Split strings containing multiple symptoms into separate columns and apply binary encoding to create a wide dataset with a dummy variable for each
 Recode incorrect and null values as NaN. 
 
@@ -33,7 +33,7 @@ Occupation is broken up into 3 groups that include no jobs, 1 job, 2-3 jobs, and
 Number of dependents is also grouped into 3 categories ranging from 2 - 5. 
 Finally, number of weeks unemployed are split into 4 categories which include 0 weeks, 4 weeks, 12 weeks, and 26-52 weeks. 
 
-##### Data Specification 
+#### Data Specification 
 Height is in inches and weight is in pounds, which is how it is typically presented in the data. Dependents is measured by number of children. Income is measured in actual US dollars. Education is broken up into five categories (some high school, high school grad, some college, college grad, graduate). Occupation, gender, and race are binary variables. 
 
 Ensure that data in each column is in a uniform format (eg. the 'height_inches' column originally contained numeric values encoded as strings as well as '72 inches (capped value for females)', recoded to 72.
