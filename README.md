@@ -58,3 +58,4 @@ For a summary of the bysort data for 1990 and 2021, click [here](https://github.
 
 [Wiki for more info. ](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/wiki)
 
+https://raw.githubusercontent.com/jessicachitkuer/MedicaidRegressionAnalysis/BySort/type%20of%20insurance.png
