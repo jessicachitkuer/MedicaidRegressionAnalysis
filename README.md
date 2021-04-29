@@ -34,15 +34,15 @@ Finally, number of weeks unemployed are split into 4 categories which include 0 
 #### Data Cleaning
 Analysis was primarily done using SAS, SPSS, and Stata. To analyze data via Python, clean data doing the following:
 <li> Split strings containing multiple symptoms into separate columns and apply binary encoding to create a wide dataset with a dummy variable for each
-Recode incorrect and null values as NaN. 
+Recode incorrect and null values as NaN. </li>
 
-Ensure that data in each column is in a uniform format (eg. the 'height_inches' column originally contained numeric values encoded as strings as well as '72 inches (capped value for females)', recoded to 72.
+<li>Ensure that data in each column is in a uniform format (eg. the 'height_inches' column originally contained numeric values encoded as strings as well as '72 inches (capped value for females)', recoded to 72.</li>
 
-Rows containing unhelpful demographic data and codes are dropped.
+<li>Rows containing unhelpful demographic data and codes are dropped.</li>
 
-Set all table values that contain text, excluding headers, to ThisFormat.
+<li>Set all table values that contain text, excluding headers, to ThisFormat.</li>
 
-Replace all data in the target column with code using more understandable labels; created from the scraped data (eg. 338 becomes OneDep90.) This is done regardless of how the data is prepared. </li>
+<li>Replace all data in the target column with code using more understandable labels; created from the scraped data (eg. 338 becomes OneDep90.) This is done regardless of how the data is prepared. </li>
 
 
 Multiple strategies were considered for encoding categorical variables to use with skikit-learn’s Decision Tree module. Because Skikit-learn interprets numerical features as continuous numeric variables, we identified methods to avoid inducing order that does not exist in the data, and determined to use the ‘get_dummies’ function in pandas to convert categorical variables into dummy variables to accomplish this task efficiently.
