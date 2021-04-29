@@ -18,6 +18,7 @@ NLSY79 data is used in this study because it is a cross-sectional representation
 
 For a full data variable explanation, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/main/.github/workflows/NLSY79%20codes.pdf). 
 
+For a summary of the bysort data for 1990 and 2021, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/jessicachitkuer-patch-1/Summ%20and%20by%20sort%20for%201990%20and%202010.pdf)
 
 
 Read more about the study in this project's wiki. 
