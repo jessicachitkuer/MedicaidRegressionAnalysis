@@ -56,5 +56,5 @@ For a full variable labeling explanation, click [here](https://github.com/jessic
 
 For a summary of the bysort data for 1990 and 2021, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/jessicachitkuer-patch-1/Summ%20and%20by%20sort%20for%201990%20and%202010.pdf).
 
-[Wiki for more info. ](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/wiki).
+[Wiki for more info. ](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/wiki)
 
