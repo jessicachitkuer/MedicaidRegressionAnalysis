@@ -41,7 +41,7 @@ Rows containing unhelpful demographic data and codes are dropped.
 
 Set all table values that contain text, excluding headers, to ThisFormat.
 
-Replace all data in the target column with code using more understandable labels; created from the scraped data (eg. 338 becomes Number of Dependents)
+Replace all data in the target column with code using more understandable labels; created from the scraped data (eg. 338 becomes OneDep90.)
 
 Multiple strategies were considered for encoding categorical variables to use with skikit-learn’s Decision Tree module. Because Skikit-learn interprets numerical features as continuous numeric variables, we identified methods to avoid inducing order that does not exist in the data, and determined to use the ‘get_dummies’ function in pandas to convert categorical variables into dummy variables to accomplish this task efficiently.
 
