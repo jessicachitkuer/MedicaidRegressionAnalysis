@@ -10,4 +10,9 @@ Looking at the effects Medicaid has had on United States health is especially im
 # Data - Variables
 While looking at Medicaid’s overall effect on U.S. health, the dependent variable is BMI, as that is an important facet in helping to determine a person’s overall health. BMI is calculated by taking the weight variable in pounds and dividing it by the height variable in inches, squared, then multiplying that number by 703. A BMI score above 30 would be considered obese. Independent variables include Medicaid, health insurance, income, time since last physicians visit, number of dependents, depression, gender, occupation, and education. 
 
+# Variable Explanation
+NLSY79 data is used in this study because it is a cross-sectional representation of individuals. This research study looks at adults aged 25 - 33 for the year 1990 and 45 - 53 for the year 2010, providing the most helpful and efficient way to see the outcome of Medicaid on BMI over time. All variables have a chosen baseline, because if all possibilities are included for a variable, then there would be a problem of perfect multicollinearity. Specific variables, like education and income, were chosen in an attempt to prevent omitted variable bias.
+
+
+
 Read more about the study in this project's wiki. 
