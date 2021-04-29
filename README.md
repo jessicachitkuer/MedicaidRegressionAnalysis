@@ -13,6 +13,8 @@ While looking at Medicaid’s overall effect on U.S. health, the dependent varia
 # Variable Explanation
 NLSY79 data is used in this study because it is a cross-sectional representation of individuals. This research study looks at adults aged 25 - 33 for the year 1990 and 45 - 53 for the year 2010, providing the most helpful and efficient way to see the outcome of Medicaid on BMI over time. All variables have a chosen baseline, because if all possibilities are included for a variable, then there would be a problem of perfect multicollinearity. Specific variables, like education and income, were chosen in an attempt to prevent omitted variable bias.
 
+For a full data variable explanation, click [here](https://github.com/jessicachitkuer/MedicaidRegressionAnalysis/blob/main/.github/workflows/NLSY79%20codes.pdf). 
+
 
 
 Read more about the study in this project's wiki. 
