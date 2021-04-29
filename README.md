@@ -18,10 +18,8 @@ While looking at Medicaid’s overall effect on U.S. health, the dependent varia
 #### Variable Explanation
 NLSY79 data is used in this study because it is a cross-sectional representation of individuals. This research study looks at adults aged 25 - 33 for the year 1990 and 45 - 53 for the year 2010, providing the most helpful and efficient way to see the outcome of Medicaid on BMI over time. All variables have a chosen baseline, because if all possibilities are included for a variable, then there would be a problem of perfect multicollinearity. Specific variables, like education and income, were chosen in an attempt to prevent omitted variable bias.
 
-#### Data Cleaning
-Split strings containing multiple symptoms into separate columns and apply binary encoding to create a wide dataset with a dummy variable for each
-Recode incorrect and null values as NaN. 
-
+#### Data Specification 
+Height is in inches and weight is in pounds, which is how it is typically presented in the data. Dependents is measured by number of children. Income is measured in actual US dollars. Education is broken up into five categories (some high school, high school grad, some college, college grad, graduate). Occupation, gender, and race are binary variables. 
 For the dependent variable, height and weight are combined to create BMI. 
 For Medicaid, binary dummy variables were created. With health insurance, two dummy variables categorized as private health insurance and no health insurance were created. 
 Income is broken up into five categories that include 0, 1-15,000, 15,000-25,000, 25,000-50,000 and 50,000+ (in U.S. dollars). 
@@ -33,15 +31,19 @@ Occupation is broken up into 3 groups that include no jobs, 1 job, 2-3 jobs, and
 Number of dependents is also grouped into 3 categories ranging from 2 - 5. 
 Finally, number of weeks unemployed are split into 4 categories which include 0 weeks, 4 weeks, 12 weeks, and 26-52 weeks. 
 
-#### Data Specification 
-Height is in inches and weight is in pounds, which is how it is typically presented in the data. Dependents is measured by number of children. Income is measured in actual US dollars. Education is broken up into five categories (some high school, high school grad, some college, college grad, graduate). Occupation, gender, and race are binary variables. 
+#### Data Cleaning
+Analysis was primarily done using SAS, SPSS, and Stata. To analyze data via Python, clean data doing the following:
+<li> Split strings containing multiple symptoms into separate columns and apply binary encoding to create a wide dataset with a dummy variable for each
+Recode incorrect and null values as NaN. 
 
 Ensure that data in each column is in a uniform format (eg. the 'height_inches' column originally contained numeric values encoded as strings as well as '72 inches (capped value for females)', recoded to 72.
+
 Rows containing unhelpful demographic data and codes are dropped.
 
 Set all table values that contain text, excluding headers, to ThisFormat.
 
-Replace all data in the target column with code using more understandable labels; created from the scraped data (eg. 338 becomes OneDep90.)
+Replace all data in the target column with code using more understandable labels; created from the scraped data (eg. 338 becomes OneDep90.) This is done regardless of how the data is prepared. </li>
+
 
 Multiple strategies were considered for encoding categorical variables to use with skikit-learn’s Decision Tree module. Because Skikit-learn interprets numerical features as continuous numeric variables, we identified methods to avoid inducing order that does not exist in the data, and determined to use the ‘get_dummies’ function in pandas to convert categorical variables into dummy variables to accomplish this task efficiently.
 
